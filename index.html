@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+      ::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+    body {
+      background-color: hsl(217, 54%, 11%);
+      text-align: center;
+      top: 10%;
+    }
+    .parent {
+      background: hsl(216, 50%, 16%);
+      height: 500px;
+      width: 300px;
+      position: relative;
+      border-radius: 20px;
+      display: grid;
+      grid-template-rows: auto;
+      left:40%;
+    }
+    .child {
+      color: aliceblue;
+    }
+    .stagenumber {
+      text-align: left;
+      margin-left: 8px;
+    }
+     .paragraph {
+       color: darkgray;
+       text-align: left;
+       margin: 18px 8px;
+    }
+    img {
+     margin: 20px 0;
+      width: 270px;
+    }
+    .price {
+      color: cyan;
+      text-align: left;
+      margin-top: -14px;
+    }
+    .itstime {
+      text-align: right;
+      margin-top: -12px;
+      margin-right: 8px;
+    }
+    .creator img {
+      width: 20px;
+      margin-top: 4%;
+      margin-left: -240px;
+    }
+     .creator p {
+       position: absolute;
+       margin-left: 50px;
+       margin-top: -42px;
+       color: rgb(146, 142, 136);
+     }
+     span {
+       color: #fff;
+     }
+     hr {
+       color: rgb(146, 142, 136);
+       width: 90%;
+     }
+       .stagenumber:hover, span:hover {
+       color: cyan;
+     }
+     .myimage:hover {
+       background-color: cyan;
+       filter: opacity(0.5) drop-shadow(0 0 0 cyan);
+       
+       
+     }
+     @media screen and (max-width: 540px) {
+      .parent {
+         left: 80px;
+       }
+     }
+     @media screen and (max-width: 425px) {
+       .parent {
+         left: 24px;
+       }
+     }
+     @media screen and (max-width: 320px) {
+      .parent {
+        width: 100vw;
+        left: -2px;
+      }
+     }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="parent">
+      <div class="child">
+        <img class="myimage" src="https://res.cloudinary.com/chimeziesolomon/image/upload/v1644917056/image-equilibrium_np54l8.jpg" alt="Equilibrium">
+        
+        <div class="stagenumber">
+          Equilibrium #3429
+        </div>
+
+       <div class="paragraph">
+        Our Equilibrium collection promotes balance and calm.
+       </div>
+       <div class="price">
+         <img src="" alt="">
+         <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
+           <path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" 
+          fill="#00FFF8"/></svg>
+        0.041 ETH
+       </div>
+       
+       <div class="itstime">
+        3 days left
+       </div>
+       <hr>
+       <div class="creator">
+         <img src="https://res.cloudinary.com/chimeziesolomon/image/upload/v1644917025/image-avatar_wwmnvw.png" alt="">
+        <p>Creation of<span> Jules Wyvern</span></p>
+       </div>
+      </div>
+    </section>
+  </main>
+  
+  <br>
+  <br>
+  <br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">chimeziesolomon</a>.
+  </div>
+</body>
+</html>
